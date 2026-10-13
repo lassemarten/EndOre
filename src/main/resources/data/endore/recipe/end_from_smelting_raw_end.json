@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": "endore:raw_end",
+  "result": {
+    "id": "endore:end"
+  },
+  "experience": 3.0,
+  "cookingtime": 200
+}

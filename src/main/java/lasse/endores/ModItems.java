@@ -28,21 +28,21 @@ public class ModItems {
     public static final ToolMaterial END_TOOL_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL, // Stufe: Eisen
             5000,    // Haltbarkeit
-            10.0f,   // Abbautempo
-            4.0f,   // zusätzlicher Angriffsschaden
+            12.0f,   // Abbautempo
+            5.0f,   // zusätzlicher Angriffsschaden
             30,     // Verzauberbarkeit
             REPAIRS_END_TOOL
     );
 
     // Werkzeuge
     public static final Item END_SWORD = register("end_sword", Item::new,
-            new Item.Properties().sword(END_TOOL_MATERIAL, 5.0f, -2.4f));
+            new Item.Properties().sword(END_TOOL_MATERIAL, 5.5f, -2.4f));
 
     public static final Item END_PICKAXE = register("end_pickaxe", Item::new,
             new Item.Properties().pickaxe(END_TOOL_MATERIAL, 1.0f, -2.8f));
 
     public static final Item END_AXE = register("end_axe",
-            props -> new Item(props.axe(END_TOOL_MATERIAL, 6.0f, -3.1f)),
+            props -> new Item(props.axe(END_TOOL_MATERIAL, 6.0f, -2.9f)),
             new Item.Properties()
     );
 

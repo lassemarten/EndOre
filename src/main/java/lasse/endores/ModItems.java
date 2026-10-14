@@ -3,14 +3,17 @@ package lasse.endores;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.util.Unit;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
 
@@ -62,6 +65,25 @@ public class ModItems {
         return Registry.register(BuiltInRegistries.ITEM, key, item);
     }
 
+    // Armor
+    public static final Item END_HELMET = register("end_helmet", Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.HELMET)
+                    .durability(ArmorType.HELMET.getDurability(EndArmorMaterial.BASE_DURABILITY)));
+
+    public static final Item END_CHESTPLATE = register("end_chestplate", Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(EndArmorMaterial.BASE_DURABILITY))
+                    .component(DataComponents.GLIDER, Unit.INSTANCE));
+
+    public static final Item END_LEGGINGS = register("end_leggings", Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(EndArmorMaterial.BASE_DURABILITY)));
+
+    public static final Item END_BOOTS = register("end_boots", Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(EndArmorMaterial.BASE_DURABILITY)));
+
+    //Initilaize
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
                 .register(output ->{

@@ -2,5 +2,9 @@
   "block.endore.end_ore": "End Ore",
   "item.endore.raw_end": "Raw End",
   "item.endore.end": "End",
-  "item.endore.end_axe": "End Axe"
+  "item.endore.end_axe": "End Axe",
+  "item.endore.end_shovel": "End Shovel",
+  "item.endore.end_hoe": "End Hoe",
+  "item.endore.end_pickaxe": "End Pickaxe",
+  "item.endore.end_sword": "End Sword"
 }

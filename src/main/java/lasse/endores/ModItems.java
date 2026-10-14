@@ -104,5 +104,13 @@ public class ModItems {
                     output.accept(END_SWORD);
                     output.accept(END_AXE);
                 });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
+                .register(output ->{
+                        output.accept(END_BOOTS);
+                        output.accept(END_LEGGINGS);
+                        output.accept(END_CHESTPLATE);
+                        output.accept(END_HELMET);
+                });
     }
 }

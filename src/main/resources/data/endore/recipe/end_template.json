@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "POP",
+    "PTP",
     "PEP",
     "PPP"
   ],
   "key": {
-    "O": "endore:end",
+    "T": "endore:end_template",
     "E": "minecraft:end_stone",
     "P": "minecraft:ender_pearl"
   },
   "result": {
     "id": "endore:end_template",
-    "count": 1
+    "count": 2
   }
 }

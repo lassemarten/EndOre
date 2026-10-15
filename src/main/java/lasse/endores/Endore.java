@@ -34,6 +34,7 @@ public class Endore implements ModInitializer {
 				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ResourceKey.create(Registries.PLACED_FEATURE, id("end_ore"))
 		);
+		LootModifier.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 

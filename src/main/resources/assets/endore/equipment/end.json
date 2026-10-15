@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "endore:end"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "endore:end"
+      }
+    ]
+  }
+}

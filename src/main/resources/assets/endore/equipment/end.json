@@ -9,6 +9,7 @@
       {
         "texture": "endore:end"
       }
-    ]
+    ],
+    "wings": [ { "texture": "endore:end" } ]
   }
 }

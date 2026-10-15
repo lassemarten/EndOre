@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "endore:end_template",
+  "base": "minecraft:netherite_boots",
+  "addition": "endore:end",
+  "result": {
+    "id": "endore:end_boots"
+  }
+}

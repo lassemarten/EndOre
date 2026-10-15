@@ -24,6 +24,8 @@ public class ModItems {
     // End
     public static final Item END = register("end", Item::new, new Item.Properties());
 
+    public static final Item END_TEMPLATE = register("end_template", Item::new, new Item.Properties());
+
     // Werkzeugmaterial
     public static final TagKey<Item> REPAIRS_END_TOOL =
             TagKey.create(Registries.ITEM, Endore.id("repairs_end_tool"));
@@ -89,6 +91,7 @@ public class ModItems {
                 .register(output ->{
                     output.accept(RAW_END);
                     output.accept(END);
+                    output.accept(END_TEMPLATE);
                 });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)

@@ -28,6 +28,7 @@ public class Endore implements ModInitializer {
 		// Proceed with mild caution.
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ArmorEffekts.initialize();
 		BiomeModifications.addFeature(
 				BiomeSelectors.foundInTheEnd(),
 				GenerationStep.Decoration.UNDERGROUND_ORES,

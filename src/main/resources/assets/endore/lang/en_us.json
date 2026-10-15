@@ -6,5 +6,9 @@
   "item.endore.end_shovel": "End Shovel",
   "item.endore.end_hoe": "End Hoe",
   "item.endore.end_pickaxe": "End Pickaxe",
-  "item.endore.end_sword": "End Sword"
+  "item.endore.end_sword": "End Sword",
+  "item.endore.end_helmet": "End Helmet",
+  "item.endore.end_chestplate": "End Chestplate",
+  "item.endore.end_leggings": "End Leggings",
+  "item.endore.end_boots": "End Boots"
 }

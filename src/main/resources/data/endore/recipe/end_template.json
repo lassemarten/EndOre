@@ -9,7 +9,7 @@
   "key": {
     "T": "endore:end_template",
     "E": "minecraft:end_stone",
-    "P": "minecraft:ender_pearl"
+    "P": "endore:ender_soul"
   },
   "result": {
     "id": "endore:end_template",

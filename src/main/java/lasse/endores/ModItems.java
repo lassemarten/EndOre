@@ -26,6 +26,8 @@ public class ModItems {
 
     public static final Item END_TEMPLATE = register("end_template", Item::new, new Item.Properties());
 
+    public static final Item ENDER_SOUL = register("ender_soul", Item::new, new Item.Properties());
+
     // Werkzeugmaterial
     public static final TagKey<Item> REPAIRS_END_TOOL =
             TagKey.create(Registries.ITEM, Endore.id("repairs_end_tool"));
